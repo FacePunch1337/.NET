@@ -6,33 +6,26 @@ namespace Values
     {
         static void Main()
         {
-            
-            bool engine = true;
-            string a;
-            string b;
-            string value;
 
-            
+            Console.Write("Введите А: ");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("Введите B: ");
+            int b = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Press the '.' key to quit: \n");
-            do
+            Console.WriteLine("----------------");
+
+            for (int i = a; i <= b; i++)
             {
-                a = Console.ReadLine();
-               
-                Console.Write(a);
-                
-
-               
-                
-
-               
+                for(int j = 1; j <= i; j++)
+                {
+                    Console.Write(i);
+                }
+                Console.WriteLine();
+            }
 
 
-               
-               
 
-
-            } while (engine == true);
+          
         }
     }
 }
